@@ -15,10 +15,17 @@ body{
   cursor:none;
 }
 
+html,
+body,
+* {
+  cursor: none !important;
+}
+
 .cursor{
   width:20px;
   height:20px;
-  border:2px solid #fff;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid #555555;
   border-radius:50%;
   position:fixed;
   top:0;
@@ -27,6 +34,7 @@ body{
   transform:translate(-50%,-50%);
   transition:transform .15s ease;
   z-index:2147483647;
+  backdrop-filter: blur(4px);
 }
 
 .enter{

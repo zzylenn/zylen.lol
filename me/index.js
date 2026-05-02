@@ -23,14 +23,15 @@ function animate(){
 
 animate()
 
-document.querySelectorAll(".icon").forEach(el=>{
-  el.addEventListener("mouseenter",()=>{
-    cursor.style.transform="translate(-50%,-50%) scale(1.4)"
-  })
-  el.addEventListener("mouseleave",()=>{
-    cursor.style.transform="translate(-50%,-50%) scale(1)"
-  })
-})
+document.querySelectorAll("a, .btn, .codebox").forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1.4)";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  });
+});
 
 enter.addEventListener("click",()=>{
   enter.classList.add("hidden")

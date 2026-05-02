@@ -41,9 +41,9 @@ enter.addEventListener("click",()=>{
   audio.play()
 })
 
-document.getElementById("dc").onclick=()=>window.open("<https://discord.com/users/1443089229679951973>","_blank")
+document.getElementById("dc").onclick=()=>window.open("https://discord.com/users/1443089229679951973","_blank")
 document.getElementById("gh").onclick=()=>window.open("https://github.com/zzylenn","_blank")
-document.getElementById("rb").onclick=()=>window.open("https://roblox.com/users/3116923731/","_blank")
+document.getElementById("rb").onclick=()=>window.open("https://roblox.com/users/3116923731/profile/","_blank")
 document.getElementById("st").onclick=()=>window.open("https://steamcommunity.com/id/zzylenn/","_blank")
 
 document.querySelectorAll(".icon").forEach(btn=>{
